@@ -1,0 +1,17 @@
+us_states_info
+source: https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States
+date: scrapped: june 8,2022
+
+us states
+source: https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States
+data scrapped: june 8, 2022
+
+us refugees 2020
+source: https://www.macrotrends.net/countries/USA/united-states/refugee-statistics
+date: scrapped: june 17,2022
+
+world gpd
+source: https://databank.worldbank.org/data/download/GDP.pdf
+date scrapped: june 17,2022
+
+

@@ -1,0 +1,44 @@
+
+##############################################################################
+##
+## using rvest to scraping tables from web
+## - package rvest in included in tidyverse
+##
+## tidyr::extract() using regex
+## - works on a dataframe
+## - extracts string from a long piece of string
+## - things of it as 
+##  1) a target - the piece of string needed
+##  2) a pattern - how to find it
+## 
+## NOTE:
+##  - in the extract function, the target must be a regex group, enclosed on ()
+##  - the target is part of the target
+##  - e.g. [pattern(target)] 
+##    - everything in the [] is the pattern
+##    - the data we need is the one in parenthesis
+##
+## modifying string with regex search and replace
+##    - the results returned by regex groups can be modified to form new string
+##    - the results from the grouping are indexed 1,2, e.g. \\1 \\2
+##    - you need two patterns: 
+##      a) search pattern, 
+##      b) and replace pattern
+##    - use str_replace(data, search_pattern, replace_pattern) 
+##############################################################################
+
+#https://stringr.tidyverse.org/articles/regular-expressions.html#grouping
+
+#phone <- regex("
+#  \\(?     # optional opening parens
+#  (\\d{3}) # area code
+#  [)- ]?   # optional closing parens, dash, or space
+#  (\\d{3}) # another three numbers
+#  [ -]?    # optional space or dash
+#  (\\d{3}) # three more numbers
+# ", comments = TRUE)
+
+#str_match("514-791-8141", phone)
+#>      [,1]          [,2]  [,3]  [,4] 
+#> [1,] "514-791-814" "514" "791" "814"
+#> 
